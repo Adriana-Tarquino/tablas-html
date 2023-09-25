@@ -671,24 +671,6 @@
   </tbody>
   </table>
 
-
-  <script>
-    // Función para contar las filas visibles de la tabla
-    function contarFilas() {
-        const tabla = document.getElementById('miTabla');
-        const filas = tabla.rows.length; // Cuenta todas las filas en la tabla
-
-        // Excluye la primera fila si es una fila de encabezado
-        if (tabla.rows[0].cells.length > 0) {
-            filas--;
-        }
-
-        alert(`La tabla tiene ${filas} filas visibles.`);
-    }
-
-    // Llama a la función para contar las filas cuando se carga la página
-    window.onload = contarFilas;
-</script>
 </body>
 
 </html>
